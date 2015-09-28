@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=SITE_MIN_WIDTH, initial-scale=1, maximum-scale=1">
     <link href="vendor/css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="vendor/css/font-awesome.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="vendor/css/owl.carousel.css"></link>
+    <link rel="stylesheet" href="vendor/css/owl.theme.css"></link>
     <link href="static/css/style-main.css" rel="stylesheet"></link>
     <script type="text/javascript" src="vendor/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/js/owl.carousel.js"></script>
     <title>Kbook</title>
   </head>
   <body>
@@ -70,9 +72,9 @@
     </nav>
 
     <!-- Banner -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-bottom:20px;">
       <div id="banner-container" class="col-md-9" style="padding-left:0px; padding-right:0px;">
-        <img class="img-responsive" style="max-height:290px;" src="static/image/banner.png"/>
+        <img class="img-responsive" style="max-height:285px;" src="static/image/banner.png"/>
       </div>
       <div class="box col-md-3 hidden-xs hidden-sm">
           <div class="card blue-grey darken-1">
@@ -89,12 +91,24 @@
 
     </div>
 
-    <!-- Most Read Books -->
-    <div>
+    <!-- Most Popular Books -->
+    <div class="box" style="margin:10px; padding-top:10px;">
+      <h4>Top Rated Books</h4>
+      <div class="owl-carousel owl-theme" >
+        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/></div>
+        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/></div>
+        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/></div>
+        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/></div>
+        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1266994573l/4862686.jpg"/></div>
+        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1348236571l/12050704.jpg"/></div>
+        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1333064332l/9523809.jpg"/></div>
     </div>
+  </div>
+
+
 
     <!-- Footer -->
-    <div class="text-center" style="margin-top:20px;" id="footer">
+    <div class="text-center" style="margin-top:20px;margin-bottom:20px;" id="footer">
       <div class="col-md-3">
         <a href="#">About Kbook</a>
       </div>
@@ -108,6 +122,21 @@
         <a href="#">Add Favorite</a>
       </div>
     </div>
+
+    <script>
+      $(document).ready(function() {
+
+        $(".owl-carousel").owlCarousel({
+          navigation : true,
+          navigationText: [
+            "<i class='fa fa-chevron-left fa-white'></i>",
+            "<i class='fa fa-chevron-right fa-white'></i>"
+          ],
+          pagination: false,
+        });
+
+      });
+    </script>
 
   </body>
 </html>
