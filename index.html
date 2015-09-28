@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=SITE_MIN_WIDTH, initial-scale=1, maximum-scale=1">
     <link href="vendor/css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="vendor/css/font-awesome.min.css" rel="stylesheet"></link>
     <link href="static/css/style-main.css" rel="stylesheet"></link>
@@ -10,7 +11,8 @@
     <title>Kbook</title>
   </head>
   <body>
-    <nav class="navbar navbar-default" role="navigation">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default" role="navigation" style="margin-bottom:10px;">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -25,7 +27,6 @@
             </div>
             <button type="submit" class="btn btn-default" style="margin-left:8px;">Search</button>
           </form>
-
           <ul class="nav navbar-nav" style="margin-left:20px;">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
@@ -60,14 +61,53 @@
               </div>
             </li>
           </ul>
-
           <ul class="nav navbar-nav navbar-right" style="margin-left:20px;">
             <li><a href="#"><i class="fa fa-user"></i>&nbsp;Join Free</a></li>
             <li><a href="#"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
           </ul>
-
         </div>
       </div>
     </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid">
+      <div id="banner-container" class="col-md-9" style="padding-left:0px; padding-right:0px;">
+        <img class="img-responsive" style="max-height:290px;" src="static/image/banner.png"/>
+      </div>
+      <div class="box col-md-3 hidden-xs hidden-sm">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title"><h4>Quote of the day</h4></span>
+              <blockquote>Men do not understand books until they have a certain amount of life,
+                or at any rate no man understands a deep book,
+                until he has seen and lived at least part of its contents.
+              </blockquote>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Most Read Books -->
+    <div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center" style="margin-top:20px;" id="footer">
+      <div class="col-md-3">
+        <a href="#">About Kbook</a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">Help &amp; Contacts</a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">Site Map</a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">Add Favorite</a>
+      </div>
+    </div>
+
   </body>
 </html>
