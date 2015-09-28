@@ -1,0 +1,9 @@
+.form-control::-webkit-input-placeholder { color: #999; }
+.form-control:-moz-placeholder { color: #999; }
+.form-control::-moz-placeholder { color: #999; }
+.form-control:-ms-input-placeholder { color: #999; }
+.dropdown-menu { width:500px;}
+.dropdown-menu li {margin-bottom: 10px; margin-top:10px;}
+body {
+  background-color: #F2F2F2;
+}
