@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="vendor/css/font-awesome.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="vendor/css/owl.carousel.css"></link>
+    <link rel="stylesheet" href="vendor/css/owl.theme.css"></link>
+    <link href="static/css/style-main.css" rel="stylesheet"></link>
+    <script type="text/javascript" src="vendor/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/js/owl.carousel.js"></script>
+    <title>Kbook</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default" role="navigation" style="margin-bottom:10px;">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Kbook</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div>
+          <form style="padding-left:50px;" class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" style="width:300px;" placeholder="Title / Author / ISBN">
+            </div>
+            <button type="submit" class="btn btn-default" style="margin-left:8px;">Search</button>
+          </form>
+          <ul class="nav navbar-nav" style="margin-left:20px;">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+              <div class="dropdown-menu" role="menu">
+                <div class="col-xs-4">
+                  <ul style="list-style-type: none;">
+                    <li><a href="#">Biography</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Classics</a></li>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="#">Cookbooks</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-4">
+                  <ul style="list-style-type: none;">
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Fiction</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Humor</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-4">
+                  <ul style="list-style-type: none;">
+                    <li><a href="#">Manga</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Science</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" style="margin-left:20px;">
+            <li><a href="#"><i class="fa fa-user"></i>&nbsp;Join Free</a></li>
+            <li><a href="signin.html"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section for signing in -->
+    <div class="box text-center" style="padding-top:10px; padding-bottom:15px;">
+      <h3>Welcome Back! Please Sign In</h3>
+      <hr class="colorgraph" style="width:50%"></hr>
+      <div class="container-fluid text-left">
+        <div class="panel-body" >
+          <form name="form" id="form" class="form-horizontal" enctype="multipart/form-data" style="width:450px; margin: 0 auto;">
+              <div class="input-group" style="margin-bottom: 5px;">
+                  <span class="input-group-addon"><i class="fa fa-male"></i></span>
+                  <input id="user" style="font-size:16px; height:40px;" type="text" class="form-control" name="user" value="" placeholder="Username">
+              </div>
+
+              <div class="input-group" style="margin-bottom: 15px;">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input id="password" style="font-size:16px; height:40px;" type="password" class="form-control" name="password" placeholder="Password">
+              </div>
+
+              <div class="form-group">
+                  <!-- Button -->
+                  <div class="col-sm-12 controls">
+                      <button style="width:100%; height:50px; font-size:19px; font-weight:500;" type="submit" href="#" class="btn btn-large btn-success pull-right">Sign in</button>
+                  </div>
+              </div>
+
+              <hr style="border-top: 1px solid #ccc;"/>
+              <center><h4>OR</h4></center>
+              <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center" style="margin-top:20px;margin-bottom:20px;" id="footer">
+      <div class="col-md-3">
+        <a href="#">About Kbook</a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">Help &amp; Contacts</a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">Site Map</a>
+      </div>
+      <div class="col-md-3">
+        <a href="#">Add Favorite</a>
+      </div>
+    </div>
+
+
+  </body>
+</html>

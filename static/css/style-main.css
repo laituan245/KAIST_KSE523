@@ -16,6 +16,14 @@ body {
     padding-right: 10px;
 }
 
+.colorgraph {
+    height: 5px;
+    border-top: 0px none;
+    background: #C4E17F linear-gradient(to right, #C4E17F, #C4E17F 12.5%, #F7FDCA 12.5%, #F7FDCA 25%, #FECF71 25%, #FECF71 37.5%, #F0776C 37.5%, #F0776C 50%, #DB9DBE 50%, #DB9DBE 62.5%, #C49CDE 62.5%, #C49CDE 75%, #669AE1 75%, #669AE1 87.5%, rgb(98, 194, 228) 87.5%, rgb(98, 194, 228)) repeat scroll 0% 0%;
+    border-radius: 5px;
+}
+
+
 blockquote {
     font-size: 16px;
     background: #F9F9F9 none repeat scroll 0% 0%;
@@ -25,10 +33,19 @@ blockquote {
     quotes: "“" "”" "‘" "’";
 }
 
+.item-img-container {
+  height: 238px;
+}
 
+.book-title {
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
 
 .owl-carousel .item{
-  margin-left: 15px;
+  margin-left: 18px;
+  margin-right: 18px;
   color: #FFF;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -37,6 +54,45 @@ blockquote {
 }
 
 .owl-carousel .item img{
-  max-height: 240px;
+  max-height: 235px;
   border:1px solid #021a40;
 }
+
+.white{
+    color:#000;
+    background-color:#fff;
+}
+
+.btn-facebook {
+    color: #ffffff;
+    -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #2b4b90;
+    *background-color: #133783;
+    background-image: -moz-linear-gradient(top, #3b5998, #133783);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#133783));
+    background-image: -webkit-linear-gradient(top, #3b5998, #133783);
+    background-image: -o-linear-gradient(top, #3b5998, #133783);
+    background-image: linear-gradient(to bottom, #3b5998, #133783);
+    background-repeat: repeat-x;
+    border-color: #133783 #133783 #091b40;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b5998', endColorstr='#ff133783', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+    .btn-facebook:hover,
+    .btn-facebook:focus,
+    .btn-facebook:active,
+    .btn-facebook.active,
+    .btn-facebook.disabled,
+    .btn-facebook[disabled] {
+        color: #ffffff;
+        background-color: #133783 !important;
+        *background-color: #102e6d !important;
+    }
+
+    .btn-facebook:active,
+    .btn-facebook.active {
+        background-color: #0d2456 \9 !important;
+    }

@@ -18,7 +18,7 @@
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Kbook</a>
+          <a class="navbar-brand" href="index.html">Kbook</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,7 +65,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right" style="margin-left:20px;">
             <li><a href="#"><i class="fa fa-user"></i>&nbsp;Join Free</a></li>
-            <li><a href="#"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
+            <li><a href="signin.html"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
           </ul>
         </div>
       </div>
@@ -91,10 +91,10 @@
 
     </div>
 
-    <!-- Most Popular Books -->
-    <div class="box" style="margin:10px; padding-top:10px; padding-bottom:20px;">
-      <h4 style="margin-bottom:20px;">Top Rated Books</h4>
-      <div class="row">
+    <!-- Top Rated Books -->
+    <div class="box" id="top-rated-books" style="margin:10px; padding-top:10px; padding-bottom:20px;">
+      <h4 style="margin-bottom:30px;">Top Rated Books &nbsp;<i class="fa fa-signal"></i></h4>
+      <div style="height:350px;">
         <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
           <div class="owl-carousel-arrows">
             <span class="btn btn-primary prev push-top"><i class="fa fa-arrow-left"></i></span>
@@ -102,16 +102,75 @@
         </div>
         <div class="col-xs-10">
           <div class="owl-carousel owl-theme" >
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1266994573l/4862686.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1344266315l/3228917.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/></div>
-            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/></div>
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/>
+              </div>
+              <span class="book-title">The Achievement Habit</span>
+            </div>
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/>
+              </div>
+              <span class="book-title">Works Well with Others</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/>
+              </div>
+              <span class="book-title">Click Millionaires</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/>
+              </div>
+              <span class="book-title">The Power Formula for LinkedIn Success</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1266994573l/4862686.jpg"/>
+              </div>
+              <span class="book-title">The Toilet Paper Entrepreneur</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1344266315l/3228917.jpg"/>
+              </div>
+              <span class="book-title">Outliers</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/>
+              </div>
+              <span class="book-title">Javascript Design Patterns</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/>
+              </div>
+              <span class="book-title">Eloquent Javascript</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/>
+              </div>
+              <span class="book-title">TCP/IP Network Administration</span>
+            </div>
+
+            <div class="item">
+              <div class="item-img-container">
+                <img class="img-responsive" src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/>
+              </div>
+              <span class="book-title">Java Man</span>
+            </div>
+
         </div>
       </div>
       <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
@@ -122,64 +181,157 @@
     </div>
   </div>
 
+  <!-- New Books -->
+  <div class="box" id="new-books" style="margin:10px; padding-top:10px; padding-bottom:20px;">
+    <h4 style="margin-bottom:30px;">New Books &nbsp;<i class="fa fa-bullhorn"></i></h4>
+    <div style="height:350px;">
+      <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+        <div class="owl-carousel-arrows">
+          <span class="btn btn-primary prev push-top"><i class="fa fa-arrow-left"></i></span>
+        </div>
+      </div>
+      <div class="col-xs-10">
+        <div class="owl-carousel owl-theme" >
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1294497489l/6593810.jpg"/>
+            </div>
+            <span class="book-title"> Learn You a Haskell for Great Good! </span>
+          </div>
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1347977794l/8693802.jpg"/>
+            </div>
+            <span class="book-title"> Pearls of Functional Algorithm Design </span>
+          </div>
 
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1391032527l/43713.jpg"/>
+            </div>
+            <span class="book-title">Structure and Interpretation of Computer Programs</span>
+          </div>
 
-    <!-- Footer -->
-    <div class="text-center" style="margin-top:20px;margin-bottom:20px;" id="footer">
-      <div class="col-md-3">
-        <a href="#">About Kbook</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">Help &amp; Contacts</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">Site Map</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">Add Favorite</a>
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1387703201l/112255.jpg"/>
+            </div>
+            <span class="book-title"> Essentials of Programming Languages </span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1368811788l/17802513.jpg"/>
+            </div>
+            <span class="book-title">Parallel and Concurrent Programming in Haskell</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1328834799l/4826120.jpg"/>
+            </div>
+            <span class="book-title">ERLANG Programming</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/>
+            </div>
+            <span class="book-title">Javascript Design Patterns</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/>
+            </div>
+            <span class="book-title">Eloquent Javascript</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/>
+            </div>
+            <span class="book-title">TCP/IP Network Administration</span>
+          </div>
+
+          <div class="item">
+            <div class="item-img-container">
+              <img class="img-responsive" src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/>
+            </div>
+            <span class="book-title">Java Man</span>
+          </div>
+
       </div>
     </div>
+    <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+      <div class="owl-carousel-arrows push-top">
+        <span class="btn btn-primary next"><i class="fa fa-arrow-right"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script>
-      $(document).ready(function() {
-        var owl = $(".owl-carousel");
+  <!-- Footer -->
+  <div class="text-center" style="margin-top:20px;margin-bottom:20px;" id="footer">
+    <div class="col-md-3">
+      <a href="#">About Kbook</a>
+    </div>
+    <div class="col-md-3">
+      <a href="#">Help &amp; Contacts</a>
+    </div>
+    <div class="col-md-3">
+      <a href="#">Site Map</a>
+    </div>
+    <div class="col-md-3">
+      <a href="#">Add Favorite</a>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      initializeOwl ("top-rated-books");
+      initializeOwl ("new-books")
+      function initializeOwl(owl_container_id) {
+        var owl = $("#" + owl_container_id + " .owl-carousel");
         owl.owlCarousel({
           navigation : false,
           pagination: true,
           afterMove: moved,
         });
 
-
         function moved() {
           if ( this.itemsAmount > this.visibleItems.length ) {
-            $('.next').show();
-            $('.prev').show();
+            var nextStr = "#" + owl_container_id + " .next";
+            var prevStr = "#" + owl_container_id + " .prev";
+            $(nextStr).show();
+            $(prevStr).show();
 
-            $('.next').removeClass('disabled');
-            $('.prev').removeClass('disabled');
+            $(nextStr).removeClass('disabled');
+            $(prevStr).removeClass('disabled');
             if ( this.currentItem == 0 ) {
-              $('.prev').addClass('disabled');
+              $(prevStr).addClass('disabled');
             }
             if ( this.currentItem == this.maximumItem ) {
-              $('.next').addClass('disabled');
+              $(nextStr).addClass('disabled');
             }
           }
           else {
-            $('.next').hide();
-            $('.prev').hide();
+            $(nextStr).hide();
+            $(prevStr).hide();
           }
         }
 
-        $(".owl-carousel-arrows .next").click(function() {
-            if (!$('.next').hasClass('disabled'))
-              owl.trigger('owl.next');
-        });
+        $("#" + owl_container_id + " .next").click(function() {
+          if (!$("#" + owl_container_id + " .next").hasClass('disabled'))
+            owl.trigger('owl.next');
+          });
 
-        $(".owl-carousel-arrows .prev").click(function() {
-          if (!$('.prev').hasClass('disabled'))
+          $("#" + owl_container_id + " .prev").click(function() {
+            if (!$("#" + owl_container_id + " .prev").hasClass('disabled'))
             owl.trigger('owl.prev');
-        });
-      });
+          });
+        }
+    });
     </script>
 
   </body>
