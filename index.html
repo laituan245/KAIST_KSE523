@@ -291,6 +291,17 @@
     $(document).ready(function() {
       initializeOwl ("top-rated-books");
       initializeOwl ("new-books")
+
+      /* Temporary code
+         Should be removed later */
+      $(".owl-carousel .item img").click (function() {
+        window.location.href = "book.html"
+      });
+      $(".book-title").click (function() {
+        window.location.href = "book.html"
+      });
+      /* ======================== */
+
       function initializeOwl(owl_container_id) {
         var owl = $("#" + owl_container_id + " .owl-carousel");
         owl.owlCarousel({

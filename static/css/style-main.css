@@ -16,6 +16,10 @@ body {
     padding-right: 10px;
 }
 
+html {
+    overflow-y:scroll;
+}
+
 .colorgraph {
     height: 5px;
     border-top: 0px none;
@@ -40,7 +44,12 @@ blockquote {
 .book-title {
   color: black;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
+  cursor: pointer; cursor: hand;
+}
+
+.book-title:hover {
+  color:#24A282;
 }
 
 .owl-carousel .item{
@@ -56,12 +65,25 @@ blockquote {
 .owl-carousel .item img{
   max-height: 235px;
   border:1px solid #021a40;
+  cursor: pointer; cursor: hand;
+}
+
+a {
+  cursor: pointer; cursor: hand;  
 }
 
 .white{
     color:#000;
     background-color:#fff;
 }
+
+.glyphicon { margin-right:5px;}
+.rating .glyphicon {font-size: 22px;}
+.rating-num { margin-top:0px;font-size: 54px; }
+.progress { margin-bottom: 5px;}
+.progress-bar { text-align: left; }
+.rating-desc .col-md-3 {padding-right: 0px;}
+.sr-only { margin-left: 5px;overflow: visible;clip: auto; }
 
 .btn-facebook {
     color: #ffffff;
@@ -81,18 +103,18 @@ blockquote {
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-    .btn-facebook:hover,
-    .btn-facebook:focus,
-    .btn-facebook:active,
-    .btn-facebook.active,
-    .btn-facebook.disabled,
-    .btn-facebook[disabled] {
-        color: #ffffff;
-        background-color: #133783 !important;
-        *background-color: #102e6d !important;
-    }
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active,
+.btn-facebook.disabled,
+.btn-facebook[disabled] {
+  color: #ffffff;
+  background-color: #133783 !important;
+  *background-color: #102e6d !important;
+}
 
-    .btn-facebook:active,
-    .btn-facebook.active {
-        background-color: #0d2456 \9 !important;
-    }
+.btn-facebook:active,
+.btn-facebook.active {
+  background-color: #0d2456 \9 !important;
+}
