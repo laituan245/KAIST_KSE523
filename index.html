@@ -92,16 +92,33 @@
     </div>
 
     <!-- Most Popular Books -->
-    <div class="box" style="margin:10px; padding-top:10px;">
-      <h4>Top Rated Books</h4>
-      <div class="owl-carousel owl-theme" >
-        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/></div>
-        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/></div>
-        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/></div>
-        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/></div>
-        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1266994573l/4862686.jpg"/></div>
-        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1348236571l/12050704.jpg"/></div>
-        <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1333064332l/9523809.jpg"/></div>
+    <div class="box" style="margin:10px; padding-top:10px; padding-bottom:20px;">
+      <h4 style="margin-bottom:20px;">Top Rated Books</h4>
+      <div class="row">
+        <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+          <div class="owl-carousel-arrows">
+            <span class="btn btn-primary prev push-top"><i class="fa fa-arrow-left"></i></span>
+          </div>
+        </div>
+        <div class="col-xs-10">
+          <div class="owl-carousel owl-theme" >
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1266994573l/4862686.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1344266315l/3228917.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/></div>
+            <div class="item"><img class="img-responsive" src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/></div>
+        </div>
+      </div>
+      <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+        <div class="owl-carousel-arrows push-top">
+          <span class="btn btn-primary next"><i class="fa fa-arrow-right"></i></span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -125,16 +142,43 @@
 
     <script>
       $(document).ready(function() {
-
-        $(".owl-carousel").owlCarousel({
-          navigation : true,
-          navigationText: [
-            "<i class='fa fa-chevron-left fa-white'></i>",
-            "<i class='fa fa-chevron-right fa-white'></i>"
-          ],
-          pagination: false,
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+          navigation : false,
+          pagination: true,
+          afterMove: moved,
         });
 
+
+        function moved() {
+          if ( this.itemsAmount > this.visibleItems.length ) {
+            $('.next').show();
+            $('.prev').show();
+
+            $('.next').removeClass('disabled');
+            $('.prev').removeClass('disabled');
+            if ( this.currentItem == 0 ) {
+              $('.prev').addClass('disabled');
+            }
+            if ( this.currentItem == this.maximumItem ) {
+              $('.next').addClass('disabled');
+            }
+          }
+          else {
+            $('.next').hide();
+            $('.prev').hide();
+          }
+        }
+
+        $(".owl-carousel-arrows .next").click(function() {
+            if (!$('.next').hasClass('disabled'))
+              owl.trigger('owl.next');
+        });
+
+        $(".owl-carousel-arrows .prev").click(function() {
+          if (!$('.prev').hasClass('disabled'))
+            owl.trigger('owl.prev');
+        });
       });
     </script>
 

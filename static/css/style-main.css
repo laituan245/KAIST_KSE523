@@ -38,4 +38,5 @@ blockquote {
 
 .owl-carousel .item img{
   max-height: 240px;
+  border:1px solid #021a40;
 }
