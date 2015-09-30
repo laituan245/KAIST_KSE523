@@ -13,280 +13,281 @@
     <title>Kbook</title>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default" role="navigation" style="margin-bottom:10px;">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Kbook</a>
-        </div>
+    <div class="container-non-responsive">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-default" role="navigation" style="margin-bottom:10px;">
+        <div style="padding-left:10px; padding-right:10px;">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Kbook</a>
+          </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div>
-          <form style="padding-left:50px;" class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" style="width:300px;" placeholder="Title / Author / ISBN">
-            </div>
-            <button type="submit" class="btn btn-default" style="margin-left:8px;">Search</button>
-          </form>
-          <ul class="nav navbar-nav" style="margin-left:20px;">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-              <div class="dropdown-menu" role="menu">
-                <div class="col-xs-4">
-                  <ul style="list-style-type: none;">
-                    <li><a href="#">Biography</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Classics</a></li>
-                    <li><a href="#">Comics</a></li>
-                    <li><a href="#">Cookbooks</a></li>
-                  </ul>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div>
+            <form style="padding-left:50px;" class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" style="width:300px;" placeholder="Title / Author / ISBN">
+              </div>
+              <button type="submit" class="btn btn-default" style="margin-left:8px;">Search</button>
+            </form>
+            <ul class="nav navbar-nav" style="margin-left:20px;">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+                <div class="dropdown-menu" role="menu">
+                  <div class="col-xs-4">
+                    <ul style="list-style-type: none;">
+                      <li><a href="#">Biography</a></li>
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Classics</a></li>
+                      <li><a href="#">Comics</a></li>
+                      <li><a href="#">Cookbooks</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-4">
+                    <ul style="list-style-type: none;">
+                      <li><a href="#">Fantasy</a></li>
+                      <li><a href="#">Fiction</a></li>
+                      <li><a href="#">History</a></li>
+                      <li><a href="#">Horror</a></li>
+                      <li><a href="#">Humor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-4">
+                    <ul style="list-style-type: none;">
+                      <li><a href="#">Manga</a></li>
+                      <li><a href="#">Mystery</a></li>
+                      <li><a href="#">Philosophy</a></li>
+                      <li><a href="#">Romance</a></li>
+                      <li><a href="#">Science</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="col-xs-4">
-                  <ul style="list-style-type: none;">
-                    <li><a href="#">Fantasy</a></li>
-                    <li><a href="#">Fiction</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Horror</a></li>
-                    <li><a href="#">Humor</a></li>
-                  </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-left:20px;">
+              <li><a href="register.html"><i class="fa fa-user"></i>&nbsp;Join Free</a></li>
+              <li><a href="signin.html"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+      <div class="container-fluid" style="padding-bottom:20px;">
+        <div id="banner-container" class="col-xs-9" style="padding-left:0px; padding-right:0px;">
+          <img   style="max-height:285px;" src="static/image/banner.png"/>
+        </div>
+        <div class="box col-xs-3">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title"><h4>Quote of the day</h4></span>
+                <blockquote>Men do not understand books until they have a certain amount of life,
+                  or at any rate no man understands a deep book,
+                  until he has seen and lived at least part of its contents.
+                </blockquote>
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Top Rated Books -->
+      <div class="box" id="top-rated-books" style="margin:10px; padding-top:10px; padding-bottom:20px;">
+        <h4 style="margin-bottom:30px;">Top Rated Books &nbsp;<i class="fa fa-signal"></i></h4>
+        <div style="height:350px;">
+          <div class="col-xs-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+            <div class="owl-carousel-arrows">
+              <span class="btn btn-primary prev push-top"><i class="fa fa-arrow-left"></i></span>
+            </div>
+          </div>
+          <div class="col-xs-10">
+            <div class="owl-carousel owl-theme" >
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/>
                 </div>
-                <div class="col-xs-4">
-                  <ul style="list-style-type: none;">
-                    <li><a href="#">Manga</a></li>
-                    <li><a href="#">Mystery</a></li>
-                    <li><a href="#">Philosophy</a></li>
-                    <li><a href="#">Romance</a></li>
-                    <li><a href="#">Science</a></li>
-                  </ul>
+                <span class="book-title">The Achievement Habit</span>
+              </div>
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/>
                 </div>
+                <span class="book-title">Works Well with Others</span>
               </div>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right" style="margin-left:20px;">
-            <li><a href="register.html"><i class="fa fa-user"></i>&nbsp;Join Free</a></li>
-            <li><a href="signin.html"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Banner -->
-    <div class="container-fluid" style="padding-bottom:20px;">
-      <div id="banner-container" class="col-md-9" style="padding-left:0px; padding-right:0px;">
-        <img class="img-responsive" style="max-height:285px;" src="static/image/banner.png"/>
-      </div>
-      <div class="box col-md-3 hidden-xs hidden-sm">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title"><h4>Quote of the day</h4></span>
-              <blockquote>Men do not understand books until they have a certain amount of life,
-                or at any rate no man understands a deep book,
-                until he has seen and lived at least part of its contents.
-              </blockquote>
-            </div>
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/>
+                </div>
+                <span class="book-title">Click Millionaires</span>
+              </div>
 
-        </div>
-      </div>
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/>
+                </div>
+                <span class="book-title">The Power Formula for LinkedIn Success</span>
+              </div>
 
-    </div>
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1266994573l/4862686.jpg"/>
+                </div>
+                <span class="book-title">The Toilet Paper Entrepreneur</span>
+              </div>
 
-    <!-- Top Rated Books -->
-    <div class="box" id="top-rated-books" style="margin:10px; padding-top:10px; padding-bottom:20px;">
-      <h4 style="margin-bottom:30px;">Top Rated Books &nbsp;<i class="fa fa-signal"></i></h4>
-      <div style="height:350px;">
-        <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
-          <div class="owl-carousel-arrows">
-            <span class="btn btn-primary prev push-top"><i class="fa fa-arrow-left"></i></span>
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1344266315l/3228917.jpg"/>
+                </div>
+                <span class="book-title">Outliers</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/>
+                </div>
+                <span class="book-title">Javascript Design Patterns</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/>
+                </div>
+                <span class="book-title">Eloquent Javascript</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/>
+                </div>
+                <span class="book-title">TCP/IP Network Administration</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/>
+                </div>
+                <span class="book-title">Java Man</span>
+              </div>
+
           </div>
         </div>
-        <div class="col-xs-10">
-          <div class="owl-carousel owl-theme" >
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/>
-              </div>
-              <span class="book-title">The Achievement Habit</span>
-            </div>
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/>
-              </div>
-              <span class="book-title">Works Well with Others</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/>
-              </div>
-              <span class="book-title">Click Millionaires</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/>
-              </div>
-              <span class="book-title">The Power Formula for LinkedIn Success</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1266994573l/4862686.jpg"/>
-              </div>
-              <span class="book-title">The Toilet Paper Entrepreneur</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1344266315l/3228917.jpg"/>
-              </div>
-              <span class="book-title">Outliers</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/>
-              </div>
-              <span class="book-title">Javascript Design Patterns</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/>
-              </div>
-              <span class="book-title">Eloquent Javascript</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/>
-              </div>
-              <span class="book-title">TCP/IP Network Administration</span>
-            </div>
-
-            <div class="item">
-              <div class="item-img-container">
-                <img class="img-responsive" src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/>
-              </div>
-              <span class="book-title">Java Man</span>
-            </div>
-
+        <div class="col-xs-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+          <div class="owl-carousel-arrows push-top">
+            <span class="btn btn-primary next"><i class="fa fa-arrow-right"></i></span>
+          </div>
         </div>
       </div>
-      <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
-        <div class="owl-carousel-arrows push-top">
-          <span class="btn btn-primary next"><i class="fa fa-arrow-right"></i></span>
+      </div>
+
+      <!-- New Books -->
+      <div class="box" id="new-books" style="margin:10px; padding-top:10px; padding-bottom:20px;">
+        <h4 style="margin-bottom:30px;">New Books &nbsp;<i class="fa fa-bullhorn"></i></h4>
+        <div style="height:350px;">
+          <div class="col-xs-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+            <div class="owl-carousel-arrows">
+              <span class="btn btn-primary prev push-top"><i class="fa fa-arrow-left"></i></span>
+            </div>
+          </div>
+          <div class="col-xs-10">
+            <div class="owl-carousel owl-theme" >
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1294497489l/6593810.jpg"/>
+                </div>
+                <span class="book-title"> Learn You a Haskell for Great Good! </span>
+              </div>
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1347977794l/8693802.jpg"/>
+                </div>
+                <span class="book-title"> Pearls of Functional Algorithm Design </span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1391032527l/43713.jpg"/>
+                </div>
+                <span class="book-title">Structure and Interpretation of Computer Programs</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1387703201l/112255.jpg"/>
+                </div>
+                <span class="book-title"> Essentials of Programming Languages </span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1368811788l/17802513.jpg"/>
+                </div>
+                <span class="book-title">Parallel and Concurrent Programming in Haskell</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1328834799l/4826120.jpg"/>
+                </div>
+                <span class="book-title">ERLANG Programming</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/>
+                </div>
+                <span class="book-title">Javascript Design Patterns</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/>
+                </div>
+                <span class="book-title">Eloquent Javascript</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/>
+                </div>
+                <span class="book-title">TCP/IP Network Administration</span>
+              </div>
+
+              <div class="item">
+                <div class="item-img-container">
+                  <img   src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/>
+                </div>
+                <span class="book-title">Java Man</span>
+              </div>
+
+          </div>
+        </div>
+        <div class="col-xs-1" style="position: relative; transform: translateY(150%) translateX(15%);">
+          <div class="owl-carousel-arrows push-top">
+            <span class="btn btn-primary next"><i class="fa fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="text-center" id="footer">
+        <div class="col-xs-3">
+          <a href="#">About Kbook</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#">Help &amp; Contacts</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#">Site Map</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#">Add Favorite</a>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- New Books -->
-  <div class="box" id="new-books" style="margin:10px; padding-top:10px; padding-bottom:20px;">
-    <h4 style="margin-bottom:30px;">New Books &nbsp;<i class="fa fa-bullhorn"></i></h4>
-    <div style="height:350px;">
-      <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
-        <div class="owl-carousel-arrows">
-          <span class="btn btn-primary prev push-top"><i class="fa fa-arrow-left"></i></span>
-        </div>
-      </div>
-      <div class="col-xs-10">
-        <div class="owl-carousel owl-theme" >
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1294497489l/6593810.jpg"/>
-            </div>
-            <span class="book-title"> Learn You a Haskell for Great Good! </span>
-          </div>
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1347977794l/8693802.jpg"/>
-            </div>
-            <span class="book-title"> Pearls of Functional Algorithm Design </span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1391032527l/43713.jpg"/>
-            </div>
-            <span class="book-title">Structure and Interpretation of Computer Programs</span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1387703201l/112255.jpg"/>
-            </div>
-            <span class="book-title"> Essentials of Programming Languages </span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1368811788l/17802513.jpg"/>
-            </div>
-            <span class="book-title">Parallel and Concurrent Programming in Haskell</span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1328834799l/4826120.jpg"/>
-            </div>
-            <span class="book-title">ERLANG Programming</span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1344734794l/14289134.jpg"/>
-            </div>
-            <span class="book-title">Javascript Design Patterns</span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1308260856l/8910666.jpg"/>
-            </div>
-            <span class="book-title">Eloquent Javascript</span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1328834212l/688363.jpg"/>
-            </div>
-            <span class="book-title">TCP/IP Network Administration</span>
-          </div>
-
-          <div class="item">
-            <div class="item-img-container">
-              <img class="img-responsive" src="https://d.gr-assets.com/books/1381866728l/18462265.jpg"/>
-            </div>
-            <span class="book-title">Java Man</span>
-          </div>
-
-      </div>
-    </div>
-    <div class="col-md-1" style="position: relative; transform: translateY(150%) translateX(15%);">
-      <div class="owl-carousel-arrows push-top">
-        <span class="btn btn-primary next"><i class="fa fa-arrow-right"></i></span>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- Footer -->
-  <div class="text-center" style="margin-top:20px;margin-bottom:20px;" id="footer">
-    <div class="col-md-3">
-      <a href="#">About Kbook</a>
-    </div>
-    <div class="col-md-3">
-      <a href="#">Help &amp; Contacts</a>
-    </div>
-    <div class="col-md-3">
-      <a href="#">Site Map</a>
-    </div>
-    <div class="col-md-3">
-      <a href="#">Add Favorite</a>
-    </div>
-  </div>
-
   <script>
     $(document).ready(function() {
       initializeOwl ("top-rated-books");
@@ -307,6 +308,7 @@
         owl.owlCarousel({
           navigation : false,
           pagination: true,
+          responsive: false,
           afterMove: moved,
         });
 

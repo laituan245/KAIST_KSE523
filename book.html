@@ -15,130 +15,133 @@
     <title>Kbook</title>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default" role="navigation" style="margin-bottom:10px;">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">Kbook</a>
-        </div>
+    <div class="container-non-responsive">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div>
-          <form style="padding-left:50px;" class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" style="width:300px;" placeholder="Title / Author / ISBN">
-            </div>
-            <button type="submit" class="btn btn-default" style="margin-left:8px;">Search</button>
-          </form>
-          <ul class="nav navbar-nav" style="margin-left:20px;">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-              <div class="dropdown-menu" role="menu">
-                <div class="col-xs-4">
-                  <ul style="list-style-type: none;">
-                    <li><a href="#">Biography</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Classics</a></li>
-                    <li><a href="#">Comics</a></li>
-                    <li><a href="#">Cookbooks</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-4">
-                  <ul style="list-style-type: none;">
-                    <li><a href="#">Fantasy</a></li>
-                    <li><a href="#">Fiction</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Horror</a></li>
-                    <li><a href="#">Humor</a></li>
-                  </ul>
-                </div>
-                <div class="col-xs-4">
-                  <ul style="list-style-type: none;">
-                    <li><a href="#">Manga</a></li>
-                    <li><a href="#">Mystery</a></li>
-                    <li><a href="#">Philosophy</a></li>
-                    <li><a href="#">Romance</a></li>
-                    <li><a href="#">Science</a></li>
-                  </ul>
-                </div>
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-default" role="navigation" style="margin-bottom:10px;">
+        <div style="padding-left:10px; padding-right:10px;">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Kbook</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div>
+            <form style="padding-left:50px;" class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" style="width:300px;" placeholder="Title / Author / ISBN">
               </div>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right" style="margin-left:20px;">
-            <li><a href="register.html"><i class="fa fa-user"></i>&nbsp;Join Free</a></li>
-            <li><a href="signin.html"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
-          </ul>
+              <button type="submit" class="btn btn-default" style="margin-left:8px;">Search</button>
+            </form>
+            <ul class="nav navbar-nav" style="margin-left:20px;">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+                <div class="dropdown-menu" role="menu">
+                  <div class="col-xs-4">
+                    <ul style="list-style-type: none;">
+                      <li><a href="#">Biography</a></li>
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Classics</a></li>
+                      <li><a href="#">Comics</a></li>
+                      <li><a href="#">Cookbooks</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-4">
+                    <ul style="list-style-type: none;">
+                      <li><a href="#">Fantasy</a></li>
+                      <li><a href="#">Fiction</a></li>
+                      <li><a href="#">History</a></li>
+                      <li><a href="#">Horror</a></li>
+                      <li><a href="#">Humor</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-4">
+                    <ul style="list-style-type: none;">
+                      <li><a href="#">Manga</a></li>
+                      <li><a href="#">Mystery</a></li>
+                      <li><a href="#">Philosophy</a></li>
+                      <li><a href="#">Romance</a></li>
+                      <li><a href="#">Science</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-left:20px;">
+              <li><a href="register.html"><i class="fa fa-user"></i>&nbsp;Join Free</a></li>
+              <li><a href="signin.html"><i class="fa fa-sign-in"></i>&nbsp;Sign In</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Section for displaying information of the book -->
+      <div class="box" id="info-box" style="width:60%; margin-left: 20px; height:500px; padding:20px;">
+        <div id="column1" class="col-xs-4 text-center">
+          <img class="img-responsive" style="max-height: 300px; margin:10px;" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/>
+          <small>Rate this book</small>
+          <select id="rating-bar-1">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div id="column2" class="col-xs-8">
+          <h4 style="margin-bottom:0px;">Works Well with Others</h4>
+          <p>by&nbsp;<span>Ross McCammon</span></p>
+          <p>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star-half-o"></span>
+            <span class="fa fa-star-o"></span>
+            &nbsp;&nbsp;4.40
+          </p>
+          <p><br><br><b>Esquire editor and Entrepreneur etiquette columnist Ross McCammon delivers a funny and authoritative guide
+                that provides the advice you really need to be confident and authentic at work, even when you
+                have no idea what’s going on.</b><br><br>
+          </p>
+          <p id="short-content">
+            Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette
+            columnist at Entrepreneur magazine, Ross McCammon, <a>...more</a>
+          </p>
+          <p id="long-content" class="hidden">
+            Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette columnist at Entrepreneur magazine, Ross McCammon, editor at an in-flight magazine, was staring out a second-floor window at a parking lot in suburban Dallas wondering if it was five o’clock yet. Everything changed with one phone call from Esquire. Three weeks later,
+            he was working in New York and wondering what the hell had just happened.
+            This is McCammon’s honest, funny, and entertaining journey from impostor to authority, a story that begins with periods of debilitating workplace anxiety but leads to rich insights and practical advice from a guy who “made it” but who still remembers what it’s like to feel entirely ill-equipped for professional success. And for life in general, if we’re being completely honest. McCammon points out the workplace for what it is: an often absurd landscape of ego and fear guided by social rules that no one ever talks about. He offers a mix of enlightening and often self-deprecating personal stories about his experience and clear, practical advice on getting the small things right—crucial skills that often go unacknowledged—from shaking a hand to conducting a business meeting in a bar to navigating a work party.
+            Here is an inspirational new way of looking at your job, your career, and success itself; an accessible guide for those of us who are smart, talented, and ambitious but who aren’t well-“leveraged” and don’t quite feel prepared for success . . . or know what to do once we’ve made it.
+            <a>(less)</a>
+          </p>
         </div>
       </div>
-    </nav>
 
-    <!-- Section for displaying information of the book -->
-    <div class="box" id="info-box" style="width:60%; margin-left: 20px; height:500px; padding:20px;">
-      <div id="column1" class="col-xs-4 text-center">
-        <img class="img-responsive" style="max-height: 300px; margin:10px;" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/>
-        <small>Rate this book</small>
-        <select id="rating-bar-1">
-          <option value=""></option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
+      <!-- Footer -->
+      <div class="text-center" id="footer">
+        <div class="col-xs-3">
+          <a href="#">About Kbook</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#">Help &amp; Contacts</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#">Site Map</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#">Add Favorite</a>
+        </div>
       </div>
-      <div id="column2" class="col-xs-8">
-        <h4 style="margin-bottom:0px;">Works Well with Others</h4>
-        <p>by&nbsp;<span>Ross McCammon</span></p>
-        <p>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star-half-o"></span>
-          <span class="fa fa-star-o"></span>
-          &nbsp;&nbsp;4.40
-        </p>
-        <p><br><br><b>Esquire editor and Entrepreneur etiquette columnist Ross McCammon delivers a funny and authoritative guide
-              that provides the advice you really need to be confident and authentic at work, even when you
-              have no idea what’s going on.</b><br><br>
-        </p>
-        <p id="short-content">
-          Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette
-          columnist at Entrepreneur magazine, Ross McCammon, <a>...more</a>
-        </p>
-        <p id="long-content" class="hidden">
-          Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette columnist at Entrepreneur magazine, Ross McCammon, editor at an in-flight magazine, was staring out a second-floor window at a parking lot in suburban Dallas wondering if it was five o’clock yet. Everything changed with one phone call from Esquire. Three weeks later,
-          he was working in New York and wondering what the hell had just happened.
-          This is McCammon’s honest, funny, and entertaining journey from impostor to authority, a story that begins with periods of debilitating workplace anxiety but leads to rich insights and practical advice from a guy who “made it” but who still remembers what it’s like to feel entirely ill-equipped for professional success. And for life in general, if we’re being completely honest. McCammon points out the workplace for what it is: an often absurd landscape of ego and fear guided by social rules that no one ever talks about. He offers a mix of enlightening and often self-deprecating personal stories about his experience and clear, practical advice on getting the small things right—crucial skills that often go unacknowledged—from shaking a hand to conducting a business meeting in a bar to navigating a work party.
-          Here is an inspirational new way of looking at your job, your career, and success itself; an accessible guide for those of us who are smart, talented, and ambitious but who aren’t well-“leveraged” and don’t quite feel prepared for success . . . or know what to do once we’ve made it.
-          <a>(less)</a>
-        </p>
-      </div>
+
     </div>
-
-    <!-- Footer -->
-    <div class="text-center" style="margin-top:20px;margin-bottom:20px;" id="footer">
-      <div class="col-md-3">
-        <a href="#">About Kbook</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">Help &amp; Contacts</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">Site Map</a>
-      </div>
-      <div class="col-md-3">
-        <a href="#">Add Favorite</a>
-      </div>
-    </div>
-
     <script>
       $(document).ready(function() {
         $('#rating-bar-1').barrating({
           theme: 'fontawesome-stars'
         });
         $("#info-box").height(Math.max($("#column1").height(), $("#column2").height()));
-        
+
         $("#short-content a").click (function () {
             $("#short-content").addClass("hidden");
             $("#long-content").removeClass("hidden");
