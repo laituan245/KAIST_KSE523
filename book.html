@@ -75,46 +75,84 @@
         </div>
       </nav>
 
-      <!-- Section for displaying information of the book -->
-      <div class="box" id="info-box" style="width:60%; margin-left: 20px; height:500px; padding:20px;">
-        <div id="column1" class="col-xs-4 text-center">
-          <img class="img-responsive" style="max-height: 300px; margin:10px;" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/>
-          <small>Rate this book</small>
-          <select id="rating-bar-1">
-            <option value=""></option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-          </select>
+      <div class="row">
+        <!-- Section for displaying information of the book -->
+         <div class="box col-xs-7" id="info-box" style="margin-left: 42px; height:500px; padding:20px;">
+          <div id="column1" class="col-xs-4 text-center">
+            <img class="img-responsive" style="max-height: 300px; margin:10px;" src="https://d.gr-assets.com/books/1443016511l/24612116.jpg"/>
+            <small>Rate this book</small>
+            <select id="rating-bar-1">
+              <option value=""></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div id="column2" class="col-xs-8">
+            <h4 style="margin-bottom:0px;">Works Well with Others</h4>
+            <p>by&nbsp;<span>Ross McCammon</span></p>
+            <p>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star-half-o"></span>
+              <span class="fa fa-star-o"></span>
+              &nbsp;&nbsp;4.40
+            </p>
+            <p><br><br><b>Esquire editor and Entrepreneur etiquette columnist Ross McCammon delivers a funny and authoritative guide
+                  that provides the advice you really need to be confident and authentic at work, even when you
+                  have no idea what’s going on.</b><br><br>
+            </p>
+            <p id="short-content">
+              Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette
+              columnist at Entrepreneur magazine, Ross McCammon, <a>...more</a>
+            </p>
+            <p id="long-content" class="hidden">
+              Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette columnist at Entrepreneur magazine, Ross McCammon, editor at an in-flight magazine, was staring out a second-floor window at a parking lot in suburban Dallas wondering if it was five o’clock yet. Everything changed with one phone call from Esquire. Three weeks later,
+              he was working in New York and wondering what the hell had just happened.
+              This is McCammon’s honest, funny, and entertaining journey from impostor to authority, a story that begins with periods of debilitating workplace anxiety but leads to rich insights and practical advice from a guy who “made it” but who still remembers what it’s like to feel entirely ill-equipped for professional success. And for life in general, if we’re being completely honest. McCammon points out the workplace for what it is: an often absurd landscape of ego and fear guided by social rules that no one ever talks about. He offers a mix of enlightening and often self-deprecating personal stories about his experience and clear, practical advice on getting the small things right—crucial skills that often go unacknowledged—from shaking a hand to conducting a business meeting in a bar to navigating a work party.
+              Here is an inspirational new way of looking at your job, your career, and success itself; an accessible guide for those of us who are smart, talented, and ambitious but who aren’t well-“leveraged” and don’t quite feel prepared for success . . . or know what to do once we’ve made it.
+              <a>(less)</a>
+            </p>
+          </div>
         </div>
-        <div id="column2" class="col-xs-8">
-          <h4 style="margin-bottom:0px;">Works Well with Others</h4>
-          <p>by&nbsp;<span>Ross McCammon</span></p>
-          <p>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star-half-o"></span>
-            <span class="fa fa-star-o"></span>
-            &nbsp;&nbsp;4.40
-          </p>
-          <p><br><br><b>Esquire editor and Entrepreneur etiquette columnist Ross McCammon delivers a funny and authoritative guide
-                that provides the advice you really need to be confident and authentic at work, even when you
-                have no idea what’s going on.</b><br><br>
-          </p>
-          <p id="short-content">
-            Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette
-            columnist at Entrepreneur magazine, Ross McCammon, <a>...more</a>
-          </p>
-          <p id="long-content" class="hidden">
-            Ten years ago, before he got a job at Esquire magazine and way before he became the etiquette columnist at Entrepreneur magazine, Ross McCammon, editor at an in-flight magazine, was staring out a second-floor window at a parking lot in suburban Dallas wondering if it was five o’clock yet. Everything changed with one phone call from Esquire. Three weeks later,
-            he was working in New York and wondering what the hell had just happened.
-            This is McCammon’s honest, funny, and entertaining journey from impostor to authority, a story that begins with periods of debilitating workplace anxiety but leads to rich insights and practical advice from a guy who “made it” but who still remembers what it’s like to feel entirely ill-equipped for professional success. And for life in general, if we’re being completely honest. McCammon points out the workplace for what it is: an often absurd landscape of ego and fear guided by social rules that no one ever talks about. He offers a mix of enlightening and often self-deprecating personal stories about his experience and clear, practical advice on getting the small things right—crucial skills that often go unacknowledged—from shaking a hand to conducting a business meeting in a bar to navigating a work party.
-            Here is an inspirational new way of looking at your job, your career, and success itself; an accessible guide for those of us who are smart, talented, and ambitious but who aren’t well-“leveraged” and don’t quite feel prepared for success . . . or know what to do once we’ve made it.
-            <a>(less)</a>
-          </p>
+
+        <!-- Section for book recommendation -->
+        <div class="box col-xs-4" id="recommendation-box" style="margin-left:15px; margin-right:42px; padding-bottom:20px;">
+          <h4><i class="fa fa-bookmark-o"></i>&nbsp;Kbook Recommendations</h4>
+          <hr style="border-top: 1px solid #ccc;">
+          <div class="row" style="margin-bottom:20px;">
+            <div class="col-xs-5 text-right" style="padding-right:0px;">
+              <img class="book_cover_img clickable" src="https://d.gr-assets.com/books/1438631544l/23462640.jpg"/>
+            </div>
+            <div class="col-xs-7">
+              <span class="book-title">The Achievement Habit<br></span>
+              <span class="author-name">Bernard Roth</span>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:20px;">
+            <div class="col-xs-5 text-right" style="padding-right:0px;">
+              <img class="book_cover_img clickable" src="https://d.gr-assets.com/books/1328044904l/13132762.jpg"/>
+            </div>
+            <div class="col-xs-7">
+              <span class="book-title">Click Millionaires<br></span>
+              <span class="author-name">Scott Fox</span>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:20px;">
+            <div class="col-xs-5 text-right" style="padding-right:0px;">
+              <img class="book_cover_img clickable" src="https://d.gr-assets.com/books/1365029073l/16087975.jpg"/>
+            </div>
+            <div class="col-xs-7">
+              <span class="book-title">The Power Formula for LinkedIn Success<br></span>
+              <span class="author-name">Wayne Breitbarth</span>
+            </div>
+          </div>
+
         </div>
       </div>
 
