@@ -352,8 +352,13 @@ a {
 .book_cover_img {
   max-height: 235px;
   max-width: 150px;
+  border:1px solid #021a40;
 }
 
 .clickable {
   cursor: pointer; cursor: hand;
+}
+
+hr {
+  border-top: 1px solid #ccc;
 }
